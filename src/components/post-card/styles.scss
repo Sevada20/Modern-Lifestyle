@@ -1,0 +1,50 @@
+.post-card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+
+  &__image-container {
+    width: 100%;
+    &--image {
+      width: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+      .post-card:hover & {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &--category {
+    font-weight: 700;
+    font-size: var(--font-size-2xs);
+    color: var(--color-category);
+  }
+
+  &--title {
+    font-size: var(--font-size-2xl);
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    gap: var(--font-size-2xs);
+
+    &--author {
+      font-size: var(--font-size-xs);
+      font-weight: 500;
+    }
+
+    &--info {
+      font-size: var(--font-size-xs);
+      color: var(--color-placeholder);
+    }
+  }
+
+  &--text {
+    font-size: var(--font-size-sm);
+    color: var(--color-placeholder);
+    line-height: 1.43;
+  }
+}

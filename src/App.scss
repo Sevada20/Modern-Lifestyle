@@ -1,0 +1,9 @@
+.container {
+  margin: 0 auto;
+  &__content {
+    max-width: 1160px;
+    padding-bottom: 165px;
+    padding-inline: var(--spacing-2md);
+    margin: 0 auto;
+  }
+}

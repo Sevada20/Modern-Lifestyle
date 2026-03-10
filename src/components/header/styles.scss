@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--spacing-lg) 0;
+  padding-inline: var(--spacing-2md);
+  max-width: 1160px;
+  margin: 0 auto;
+  &--logo {
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &--hamburger {
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 769px) {
+  .header--hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 769px) {
+  .header {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 650px) {
+  .header--logo {
+    display: none;
+  }
+}

@@ -1,0 +1,23 @@
+.posts {
+  margin-top: var(--spacing-2xl);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  @media (min-width: 1025px) {
+    & > * {
+      flex: 0 0 calc((100% - 48px) / 3);
+    }
+    @media (min-width: 769px) and (max-width: 1024px) {
+      & > * {
+        flex: 0 0 calc((100% - 24px) / 2);
+      }
+    }
+
+    @media (max-width: 768px) {
+      & > * {
+        flex: 0 0 100%;
+      }
+    }
+  }
+}
